@@ -1,0 +1,60 @@
+{
+  "name": "@run-as-root/maxcluster-mcp-server",
+  "version": "2.0.0",
+  "description": "MCP Server for MaxCluster infrastructure management - Complete Magento 2 environment provisioning with one command",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "watch": "tsx watch src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "maxcluster",
+    "magento",
+    "magento2",
+    "nginx",
+    "apache",
+    "php",
+    "mysql",
+    "mariadb",
+    "redis",
+    "rabbitmq",
+    "elasticsearch",
+    "opensearch",
+    "infrastructure",
+    "automation",
+    "devops",
+    "cluster",
+    "ai-agent"
+  ],
+  "author": "run-as-root <info@run-as-root.sh>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/run-as-root/maxcluster-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/run-as-root/maxcluster-mcp/issues"
+  },
+  "homepage": "https://github.com/run-as-root/maxcluster-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "maxcluster-mcp": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "maxcluster": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/maxcluster-mcp/dist/index.js"
+      ],
+      "env": {
+        "MAXCLUSTER_PAT": "your_personal_access_token_here"
+      }
+    }
+  }
+}
