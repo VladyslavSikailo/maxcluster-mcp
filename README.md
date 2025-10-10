@@ -22,6 +22,21 @@ Model Context Protocol (MCP) server for MaxCluster infrastructure management. Co
 
 ### Installation
 
+#### Option 1: NPX (Recommended)
+
+```bash
+# Run directly with npx
+npx @run-as-root/maxcluster-mcp-server
+```
+
+#### Option 2: Claude Code (One-liner)
+
+```bash
+claude mcp add @run-as-root/maxcluster-mcp-server --env MAXCLUSTER_PAT=your_token_here
+```
+
+#### Option 3: Manual Installation
+
 ```bash
 # Clone the repository
 git clone https://github.com/run-as-root/maxcluster-mcp.git
@@ -42,8 +57,8 @@ Add to your MCP client configuration (e.g., `~/Library/Application Support/Claud
 {
   "mcpServers": {
     "maxcluster": {
-      "command": "node",
-      "args": ["/path/to/maxcluster-mcp/dist/index.js"],
+      "command": "npx",
+      "args": ["@run-as-root/maxcluster-mcp-server"],
       "env": {
         "MAXCLUSTER_PAT": "your_personal_access_token_here"
       }
